@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <title>Hangman Game</title>
+  </head>
+
+  <style>
+    body {
+      background-color: #0d4653;
+      color: white;
+      text-align: center;
+    }
+
+    .panel {
+      padding: 10px;
+    }
+  </style>
+
+
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <img src="/hangmanPic.PNG" style="width:100%">
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Guess the Name!!</h3>
+        </div>
+
+        <div class="panel-body">
+          <h2 id="wordToGuess">_ _ _ _ _ _ _ _</h2>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Wrong Letters: <span id="wrongGuesses"></span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Guesses Left: <span id="numGuesses">0</span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Win Counter: <span id="winCounter">0</span>
+        </div>
+      </div>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          Loss Counter: <span id="lossCounter">0</span>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="logic.js"></script>
+  </body>
+</html>
